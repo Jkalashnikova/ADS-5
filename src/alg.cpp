@@ -1,3 +1,4 @@
+// Copyright 2021 NNTU-CS
 #include <string>
 #include <map>
 #include "tstack.h"
@@ -13,7 +14,6 @@ std::string infx2pstfx(std::string inf) {
             c += inf[i];
             c += ' ';
         } else {
-
             if (inf[i] == '(' || stack1.isEmpty() == 1 ||
             priority[inf[i]] > priority[stack1.get()]) {
                 stack1.push(inf[i]);
